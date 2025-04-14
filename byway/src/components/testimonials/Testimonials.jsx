@@ -22,7 +22,7 @@ const Testimonials = () => {
 
           <div key={testimonial.id} className='testimonialsCard'>
             <Quote className='quote' />
-            <p>{testimonial.testimonial}</p>
+            <p>"{testimonial.testimonial}"</p>
             <div className="person">
               <img src={Img} alt="" />
               <div className="aboutPerson">

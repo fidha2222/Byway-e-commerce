@@ -28,38 +28,52 @@
 .testimonialContainer .testimonials .testimonialsCard {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 18px;
+    align-items: start;
+    padding: 20px;
     border: 1px solid #E2E8F0;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     border-radius: 16px;
-    height: 250px;
+    width: 500px;
+    height:320px;
     margin-right: 20px;
 }
 .testimonialContainer .testimonials .testimonialsCard:last-child {
     margin-right: 0;
 }
 .testimonialContainer .testimonials .testimonialsCard .quote {
-
+    width: 50px;
+    height: auto;
+    position: relative;
+    bottom: -30px;
 }
 .testimonialContainer .testimonials .testimonialsCard p {
-
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    position: relative;
+    bottom: -40px;
 }
 .testimonialContainer .testimonials .testimonialsCard .person {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
+    position: relative;
+    bottom: -40px;
 }
 .testimonialContainer .testimonials .testimonialsCard .person img {
-
+    margin-right: 10px;
 }
 .testimonialContainer .testimonials .testimonialsCard .person .aboutPerson {
-
+    position: relative;
+    top: -30px;
 }
 .testimonialContainer .testimonials .testimonialsCard .person .aboutPerson h5 {
-    
+    font-size: 20px;
+    font-weight: 600;
 }
 .testimonialContainer .testimonials .testimonialsCard .person .aboutPerson p {
-    
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
 }
