@@ -1,0 +1,373 @@
+.pageContainer{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+
+
+.courseHeroContainer {
+    background-color: #F8FAFC;
+}
+.courseHero {
+    display: flex;
+    flex-direction: row;
+}
+.courseHero .left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.courseHero .left .top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -35px;
+}
+.courseHero .left .top li {
+    margin-right: 30px;
+    
+}
+.courseHero .left .top li a {
+    color: #334155;
+    font-size: 16px;
+    font-weight: 400;
+}
+.courseHero .left .top li .title {
+    color: #2563EB;
+}
+.courseHero .left h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.courseHero .left p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #334155;
+    line-height: 160%;
+    position: relative;
+    top: -20px;
+}
+.courseHero .left .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+.courseHero .left .about .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+}
+.courseHero .left .about .rating h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FEC84B;
+    position: relative;
+    top: -20px;
+    right: -30px;
+}
+.courseHero .left .about .rating ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+.courseHero .left .about .rating ul li {
+    margin-right: 5px;
+}
+.courseHero .left .about .rating ul li img {
+
+}
+.courseHero .left .about .rating p {
+    margin-left: 10px;
+}
+.courseHero .left .about p {
+    margin-left: 10px;
+}
+.courseHero .left .courseInstructor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.courseHero .left .courseInstructor img {
+    width: 60px;
+    border-radius: 35px;
+    position: relative;
+    top: -20px;
+}
+.courseHero .left .courseInstructor p {
+    margin-left: 25px;
+}
+.courseHero .left .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    margin-top: 50px;
+}
+.courseHero .left .language img {
+    width: 25px;
+    position: relative;
+    top: -20px;
+}
+.courseHero .left .language p {
+    margin-left: 15px;
+}
+
+
+.courseHero .right {
+    background-color: #fff;
+    width: 350px;
+    height: auto;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+.courseHero .right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+.courseHero .right .fees {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+    top: -15px;
+}
+.courseHero .right .fees h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-right: 15px;
+}
+.courseHero .right .fees h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-right: 15px;
+}
+.courseHero .right .fees .offer {
+    font-size: 20px;
+    font-weight: 600;
+    color: #16A34A;
+}
+.courseHero .right .addToCart {
+    background-color: #020617;
+    color: #fff;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    position: relative;
+    top: -25px;
+}
+.courseHero .right .buyNow {
+    border: 1px solid #020617;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: relative;
+    top: -25px;
+}
+.courseHero .right .share {
+    border-top: 1px solid #E2E8F0;
+}
+.courseHero .right .share p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.filter p {
+    font-size: 16px;
+    padding: 18px 41px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin: 10px;
+}
+.filter p:first-child {
+    border: #EFF6FF;
+    background-color: #EFF6FF;
+}
+.courseDescription {
+    width: 70%;
+}
+.courseDescription h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.courseDescription p {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.certificate {
+    width: 70%;
+}
+.certificate h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.certificate p {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+
+.InstructorContainer {
+    width: 70%;
+    padding-bottom: 20px;
+}
+.InstructorContainer h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.InstructorContainer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2563EB;
+}
+.InstructorContainer .designation {
+    position: relative;
+    top: -15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #334155;
+}
+.InstructorContainer .instructor {
+    display: flex;
+    flex-direction: row;
+}
+.InstructorContainer .instructor .InstructorImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    margin-right: 20px;
+}
+.InstructorContainer .instructor .details {
+
+}
+.InstructorContainer .instructor .details span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+}
+.InstructorContainer .instructor .details .one {
+    
+}
+.InstructorContainer .instructor .details .two {
+    position: relative;
+    top: -15px;
+    left: -5px;
+}
+.InstructorContainer .instructor .details .three {
+    position: relative;
+    top: -30px;
+}
+
+.InstructorContainer .instructor .details span img {
+    margin-right: 5px;
+}
+.InstructorContainer .instructor .details span .achive {
+    width: 20px;
+}
+.InstructorContainer .instructor .details span .cap {
+    width: 25px;
+}
+.InstructorContainer .instructor .details span .play {
+    width: 19px;
+}
+.InstructorContainer .instructor .details span .reviews {
+    font-size: 16px;
+    font-weight: 400;
+}
+.InstructorContainer .instructor .details span .students {
+    font-size: 16px;
+    font-weight: 400;
+}
+.InstructorContainer .instructor .details span .courses {
+    font-size: 16px;
+    font-weight: 400;
+}
+.InstructorContainer .about {
+    font-size: 18px;
+    color: #334155;
+    line-height: 160%;
+}
+
+
+
+.courseSyllabus {
+    width: 70%;
+    border-top: 1px solid #E2E8F0;
+}
+.courseSyllabus h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.courseSyllabus .syllabus {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
+.courseSyllabus .syllabus ul {
+    
+}
+.courseSyllabus .syllabus ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E8F0;
+}
+.courseSyllabus .syllabus ul li:last-child {
+    border-bottom: none;
+}
+.courseSyllabus .syllabus ul li .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.courseSyllabus .syllabus ul li .left h5 {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.courseSyllabus .syllabus ul li .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 25px;
+}
+.courseSyllabus .syllabus ul li .right .lessons {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.courseSyllabus .syllabus ul li .right .hours {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+

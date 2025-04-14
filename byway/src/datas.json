@@ -1,0 +1,126 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "Beginner’s Guide to Design",
+            "description": "22 Total Hours. 155 Lectures. Beginner",
+            "about": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
+            "instructor": "By Ronald Richards",
+            "rating": "(1200 Rating)",
+            "languages": "English, Spanish, Italian, German",
+            "fees": "$149.9"
+        },
+        {
+            "id": 2,
+            "title": "Beginner’s Guide to Design",
+            "description": "22 Total Hours. 155 Lectures. Beginner",
+            "instructor": "By Ronald Richards",
+            "rating": "(1200 Rating)",
+            "fees": "$149.9"
+        },
+        {
+            "id": 3,
+            "title": "Beginner’s Guide to Design",
+            "description": "22 Total Hours. 155 Lectures. Beginner",
+            "instructor": "By Ronald Richards",
+            "rating": "(1200 Rating)",
+            "fees": "$149.9"
+        },
+        {
+            "id": 4,
+            "title": "Beginner’s Guide to Design",
+            "description": "22 Total Hours. 155 Lectures. Beginner",
+            "instructor": "By Ronald Richards",
+            "rating": "(1200 Rating)",
+            "fees": "$149.9"
+        }
+    ],
+    "instructors": [
+        {
+            "id": 1,
+            "name": "Ronald Richards",
+            "sub": "UI/UX Designer",
+            "ImgProfile": "InstructorImg",
+            "reviews": "40,445 Reviews",
+            "students": "2400 Students",
+            "students_course01": "500 Students",
+            "no_courses": "15 Courses",
+            "rating": "4.9",
+            "description": "With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
+        },
+        {
+            "id": 2,
+            "name": "Ronald Richards",
+            "sub": "UI/UX Designer",
+            "students": "2400 Students",
+            "rating": "4.9"
+        },
+        {
+            "id": 3,
+            "name": "Ronald Richards",
+            "sub": "UI/UX Designer",
+            "students": "2400 Students",
+            "rating": "4.9"
+        },
+        {
+            "id": 4,
+            "name": "Ronald Richards",
+            "sub": "UI/UX Designer",
+            "students": "2400 Students",
+            "rating": "4.9"
+        },
+        {
+            "id": 5,
+            "name": "Ronald Richards",
+            "sub": "UI/UX Designer",
+            "students": "2400 Students",
+            "rating": "4.9"
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Jane Doe",
+            "designation": "Designer",
+            "profileImg": "assets/jane.png",
+            "testimonial": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "designation": "Designer",
+            "profileImg": "assets/jane.png",
+            "testimonial": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."
+        },
+        {
+            "id": 3,
+            "name": "Jane Doe",
+            "designation": "Designer",
+            "profileImg": "assets/jane.png",
+            "testimonial": "Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."
+        }
+    ],
+    "learnersreview": [
+        {
+            "id": 1,
+            "name": "Mark Doe",
+            "rating": "4.6",
+            "date" : "22nd March, 2024",
+            "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+            "id": 2,
+            "name": "Mark Doe",
+            "rating": "4.6",
+            "date" : "22nd March, 2024",
+            "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        },
+        {
+            "id": 3,
+            "name": "Mark Doe",
+            "rating": "4.6",
+            "date" : "22nd March, 2024",
+            "review": "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+        }
+    ]
+}

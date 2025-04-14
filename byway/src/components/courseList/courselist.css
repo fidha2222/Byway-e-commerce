@@ -1,0 +1,96 @@
+.courselistContainer {
+    margin-top: 50px;
+}
+.courselistContainer .topCourses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.courselistContainer .topCourses h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.courselistContainer .topCourses a {
+    text-decoration: none;
+    color: #3B82F6;
+}
+.courselistContainer .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.courselistContainer .courses .courseCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    border-radius: 16px;
+    height: 350px;
+}
+.courselistContainer .courses .courseCard img {
+    width: 290px;
+    height: 160px;
+}
+.courselistContainer .courses .courseCard .aboutCourse {
+    display: flex;
+    flex-direction: column;
+}
+.courselistContainer .courses .courseCard .aboutCourse h4 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.courselistContainer .courses .courseCard .aboutCourse h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #334155;
+    position: relative;
+    top: -60px;
+}
+.courselistContainer .courses .courseCard .aboutCourse .rating {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -85px;
+    left: -40px;
+}
+.courselistContainer .courses .courseCard .aboutCourse .rating ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -20px;
+    margin-right: 10px;
+}
+.courselistContainer .courses .courseCard .aboutCourse .rating ul li {
+    
+}
+.courselistContainer .courses .courseCard .aboutCourse .rating ul li .star {
+    
+}
+.courselistContainer .courses .courseCard .aboutCourse .rating p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    position: relative;
+    top: -22px;
+}
+.courselistContainer .courses .courseCard .aboutCourse p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    position: relative;
+    top: -130px;
+    
+}
+.courselistContainer .courses .courseCard .aboutCourse .courseFee{
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    top: -170px;
+}

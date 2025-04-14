@@ -1,0 +1,124 @@
+.MainContainer {
+
+}
+.MainContainer h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.MainContainer .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.MainContainer .bottom .left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.MainContainer .bottom .left .ratingTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.MainContainer .bottom .left .ratingTop .rating {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.MainContainer .bottom .left .ratingTop p {
+    font-size: 18px;
+    font-weight: 400;
+}
+.MainContainer .bottom .left .ratingBottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 400;
+}
+.MainContainer .bottom .left .ratingBottom .two {
+    position: relative;
+    top: -65px;
+}
+.MainContainer .bottom .left .ratingBottom .three {
+    position: relative;
+    top: -100px;
+}
+.MainContainer .bottom .left .ratingBottom .four {
+    position: relative;
+    top: -135px;
+}
+.MainContainer .bottom .left .ratingBottom .five {
+    position: relative;
+    top: -170px;
+}
+.MainContainer .bottom .left .ratingBottom div {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    color: #334155;
+}
+.MainContainer .bottom .left .ratingBottom div span p {
+    margin-left: 7px;
+}
+.MainContainer .bottom .right {
+    width: 65%;
+}
+.MainContainer .bottom .right .reviewCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.MainContainer .bottom .right .reviewCard .reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+.MainContainer .bottom .right .reviewCard .reviewer img {
+    width: 60px;
+    height: 60px;
+}
+.MainContainer .bottom .right .reviewCard .reviewer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.MainContainer .bottom .right .reviewCard .review {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.MainContainer .bottom .right .reviewCard .review .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.MainContainer .bottom .right .reviewCard .review .top .rating {
+    display: flex;
+    flex-direction: row;
+}
+.MainContainer .bottom .right .reviewCard .review .top .rating img {
+    margin-right: 5px;
+}
+.MainContainer .bottom .right .reviewCard .review .top .rating p {
+    margin-right: 35px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.MainContainer .bottom .right .reviewCard .review .top p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.MainContainer .bottom .right .reviewCard .review p {
+    font-size: 18px;
+    font-weight: 400;
+}
