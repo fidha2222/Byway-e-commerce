@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './courselist.css';
 import BG from '../../assets/bg.jpg';
 import {ReactComponent as Star} from '../../assets/star.svg';
@@ -23,7 +25,7 @@ const CourseList = () => {
             <div key={course.id} className='courseCard'>
               <img src={BG} alt="Course" />
               <div className="aboutCourse">
-                <h4><a href={CourseDetails}>{course.title}</a></h4>
+                <h4><Link to={`/course/${course.id}`}>{course.title}</Link></h4>
                 <h6>By Ronald Richards</h6>
                 <div className="rating">
                   <ul className="stars">
