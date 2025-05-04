@@ -28,6 +28,7 @@ const TopInstructors = () => {
               <p>{instructor.sub}</p>
             </div>
           </div>
+          <hr />
           <div className="bottom">
             <div className="rating">
               <Star className='star' />

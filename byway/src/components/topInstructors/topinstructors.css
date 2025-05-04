@@ -30,7 +30,9 @@
     height: 300px;
 }
 .topInstructorsContainer .instructors .instructorCard .top {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .topInstructorsContainer .instructors .instructorCard .top .imgInstructor  {
     width: 200px;
@@ -39,7 +41,7 @@
 .topInstructorsContainer .instructors .instructorCard .top .about {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 .topInstructorsContainer .instructors .instructorCard .top .about h4 {
     font-size: 22px;
@@ -54,6 +56,13 @@
     line-height: 160%;
     position: relative;
     top: -55px;
+}
+.topInstructorsContainer .instructors .instructorCard hr {
+    width: 180px;
+    height: 1px;
+    color: #e0e0e0;
+    position: relative;
+    top: -60px;
 }
 .topInstructorsContainer .instructors .instructorCard .bottom {
     display: flex;
