@@ -1,4 +1,3 @@
-import React from 'react';
 import './home.css';
 import Footer from '../../components/footer/Footer';
 import TopCategories from '../../components/topCategories/TopCategories';
@@ -14,8 +13,177 @@ import One from '../../assets/model-4.jpg';
 import Two from '../../assets/model-6.jpg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
-const Home = () => {
+
+import React, { useState, useEffect } from 'react';
+
+function LoginPopup({ onClose, onSignUp, onSubmit }) {
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit({ username, password });
+    };
+
   return (
+    <div className="popup-overlay">
+      <div className="popup-content">
+        <div className="top">
+            <h1>LOGIN</h1>
+        </div>
+        <div className="middle">
+            <form onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="username">Username:</label>
+                  <input
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                    type="text"
+                    id="username"
+                    name="username"
+                    value={username}
+                  />
+                </div>
+                <div>
+                    <label htmlFor="password">Password:</label>
+                    <input 
+                        onChange={(e) => setPassword(e.target.value)}
+                        required 
+                        type="password" 
+                        id="password" 
+                        name="password"/>  
+                </div>
+                <div id='submit'>
+                   <button onSubmit={e => e.preventDefault()} type="submit" className='submit'>Log In</button> 
+                </div>
+            </form>
+        </div>
+        <div className="bottom">
+            <p>Don’t have an account? <button
+              type="button"
+              className="signup-link"
+              onClick={onSignUp}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#007bff",
+                textDecoration: "underline",
+                cursor: "pointer",
+                padding: 0,
+                font: "inherit"
+              }}
+            >
+              Sign Up
+            </button></p>
+        </div>
+        <button className='close' onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
+}
+
+
+function SignUpPopup({ onClose, onLogin }) {
+  return (
+    <div className="popup-overlay">
+      <div className="popup-content">
+        <div className="top">
+          <h1>SIGN UP</h1>
+        </div>
+        <div className="middle">
+          <form>
+            <div>
+              <label htmlFor="username">Username:</label>
+              <input  type="username" id="email" name="email" />
+            </div>
+            <div>
+              <label htmlFor="password">Password:</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div>
+              <label htmlFor="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" />
+            </div>
+            <div id="submit">
+              <button onSubmit={e => e.preventDefault()} type="submit" className="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div className="bottom">
+          <p>
+            Already have an account?{' '}
+            <button
+              type="button"
+              className="login-link"
+              onClick={onLogin}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#007bff",
+                textDecoration: "underline",
+                cursor: "pointer",
+                padding: 0,
+                font: "inherit"
+              }}
+            >
+              Log In
+            </button>
+          </p>
+        </div>
+        <button className="close" onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
+}
+
+
+const Home = () => {
+
+    const [popupType, setPopupType] = useState(null);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+     useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    setIsAuthenticated(!!token);
+    }, []);
+
+    const handleLoginSubmit = async ({ username, password }) => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+      if (!response.ok) {
+      // Handle error (e.g., wrong credentials)
+      alert('Login failed. Please check your username and password.');
+      return;
+      }
+      const data = await response.json();
+
+    
+    if (data.token) {
+      
+      localStorage.setItem('authToken', data.token);
+
+    } else {
+      alert('Login failed. No token received.');
+    }
+      setPopupType(null); // Close popup
+    } catch (error) {
+      console.error('Error:', error);
+    alert('An error occurred. Please try again.');
+    }
+  };
+
+    // logout
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    setIsAuthenticated(false);
+  };
+
+     return (
     <div className='mainContainer'>
         <div className='container'>
             <header className="header">
@@ -27,10 +195,29 @@ const Home = () => {
                     <a href="/"> 
                         <Cart className="cart" /> 
                     </a>
-                    <button className='login'> Log In</button>
-                    <button className='signup'>Sign Up</button>
+                    {!isAuthenticated ? (
+              <>
+                <button onClick={() => setPopupType('login')} className='login'>Login</button>
+                <button onClick={() => setPopupType('signup')} className='signup'>Sign Up</button>
+              </>
+            ) : (
+              <button onClick={handleLogout} className='logout'>Logout</button>
+            )}
                 </nav>
             </header>
+            {popupType === 'login' && (
+            <LoginPopup
+              onClose={() => setPopupType(null)}
+              onSignUp={() => setPopupType('signup')}
+              onSubmit={handleLoginSubmit}
+            />
+            )}
+            {popupType === 'signup' && (
+            <SignUpPopup
+              onClose={() => setPopupType(null)}
+              onLogin={() => setPopupType('login')}
+            />
+            )}
             <div className='spotlight'> 
                 <div className="left">
                     <h1>Unlock Your Potential <br></br>with Byway</h1>
