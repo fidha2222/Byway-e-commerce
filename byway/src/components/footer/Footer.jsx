@@ -44,7 +44,9 @@ const Footer = () => {
               <p>Tel: +(123) 456-7890</p>
               <p>Mail: bywayedu@webkul.in</p>
             </div>
-            <img src={SocialMedia} alt="SocialMedia" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src={SocialMedia} alt="SocialMedia" />
+            </a>
           </div>
         </div>
       </div>

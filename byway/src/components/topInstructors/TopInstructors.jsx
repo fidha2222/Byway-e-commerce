@@ -24,7 +24,7 @@ const TopInstructors = () => {
           <div className="top">
             <img src={Instructor} alt="Instructor" className='imgInstructor' />
             <div className="about">
-              <h4>{instructor.name}</h4>
+              <h4>{instructor.sub}</h4>
               <p>{instructor.sub}</p>
             </div>
           </div>
